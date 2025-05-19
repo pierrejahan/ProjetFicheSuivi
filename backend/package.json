@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.1",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.15.18"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "dev": "bun index.ts",
+    "dev:upload": "bun index.ts",
+    "dev:search": "bun index-search.ts",
+    "dev:all": "bun index.ts & bun index-search.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.14.2",
+    "multer": "^1.4.5-lts.2"
+  }
+}

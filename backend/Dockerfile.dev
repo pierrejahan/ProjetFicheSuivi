@@ -1,0 +1,20 @@
+# Utiliser une image officielle Node.js (version LTS) basée sur Alpine pour un environnement léger
+FROM oven/bun:1.2.8-alpine
+
+# Définir le dossier de travail dans le conteneur
+WORKDIR /app
+
+# Copier uniquement les fichiers nécessaires pour installer les dépendances
+COPY package.json bun.lock  ./ 
+
+# Installer les dépendances
+RUN bun install
+
+# Copier le reste des fichiers du backend dans le conteneur
+COPY . .
+
+# Exposer le port utilisé par ton serveur backend (exemple : 3000 pour Express)
+EXPOSE 3001
+
+# Démarrer le serveur en mode développement (tu peux utiliser nodemon si installé)
+CMD ["bun", "run", "dev"]

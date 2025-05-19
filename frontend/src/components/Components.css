@@ -1,0 +1,159 @@
+/* Ajout pour connexion */
+
+.connexion-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.connexion-form-group {
+  margin-bottom: 1rem;
+}
+
+.connexion-input,
+.connexion-select {
+  width: 100%;
+}
+
+.connexion-link {
+  margin-top: 1rem;
+  display: block;
+}
+
+/* Ajout pour Creation */
+.creation-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.creation-form-group {
+  margin-bottom: 1rem;
+}
+
+.creation-input,
+.creation-select {
+  width: 100%;
+}
+
+.creation-button {
+  width: 100%;
+}
+
+/* Ajout pour ListeDocuments.tsx */
+
+.liste-documents-container {
+  padding: 1rem;
+}
+
+.liste-documents-input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.liste-documents-button-search {
+  padding: 0.5rem 1rem;
+  margin-left: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.liste-documents-error {
+  color: red;
+  margin-top: 1rem;
+}
+
+.liste-documents-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.liste-documents-table thead tr {
+  background-color: #f2f2f2;
+}
+
+.liste-documents-cell {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Input file caché */
+.input-file-hidden {
+  display: none;
+}
+
+/* Label personnalisé pour input file */
+.input-file-label {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #2196F3;
+  color: white;
+  border-radius: 4px;
+  user-select: none;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 0.9rem;
+}
+
+.input-file-label:hover {
+  background-color: #0b7dda;
+}
+
+/* Message succès upload */
+.liste-documents-upload-success {
+  margin-left: 8px;
+  color: green;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Bouton retour */
+.liste-documents-button-back {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Pagination */
+.liste-documents-pagination {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.liste-documents-button-page {
+  margin: 0 4px;
+  padding: 6px 10px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.liste-documents-button-page:hover:not(.liste-documents-button-page-active) {
+  background-color: #ddd;
+}
+
+.liste-documents-button-page-active {
+  font-weight: bold;
+  background-color: #e0e0e0;
+  cursor: default;
+}
+
+/* Colonne fichier un peu plus large */
+.fichier-col {
+  width: 180px;
+}
